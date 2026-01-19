@@ -6,7 +6,7 @@ include("../config/config.php");
 $config = new Config();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['dept_name'];
+    $name = $_POST['name'];
 
     $res = $config->insertDepartment($name);
 
